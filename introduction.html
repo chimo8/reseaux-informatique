@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réseaux Informatiques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* HEADER */
+        header {
+            background: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        /* MAIN CONTENT */
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: #0066cc;
+            background: #f0f0f0;
+            padding: 10px;
+            border-left: 4px solid gray;
+            margin-top: 30px;
+        }
+        
+        .box {
+            background: #f8f8f8;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            border: 1px solid gray;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background: #0066cc;
+            color: white;
+        }
+        
+        button {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 5px;
+        }
+        
+        .cache {
+            display: none;
+        }
+        
+        .info {
+            background: #e6f2ff;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #0066cc;
+        }
+        
+        /* FOOTER */
+        footer {
+            background: #333333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        footer p {
+            margin: 5px 0;
+        }
+        footer {
+    background: linear-gradient(135deg, #4c7edb, #3b6ac4); /* smooth gradient blue */
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* subtle shadow */
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Introduction aux Réseaux Informatiques</h1>
+        <p>Définition, importance et exemples</p>
+    </header>
+    
+    <main>
+        <h2>1. Définition d'un Réseau</h2>
+        <div class="box">
+            <p>Un réseau informatique connecte des ordinateurs pour échanger des données.</p>
+            <button onclick="montrerDetails()">Voir plus de détails</button>
+            <div id="details" class="cache info">
+                <p>Un réseau permet de :</p>
+                <ul>
+                    <li>Partager des fichiers</li>
+                    <li>Utiliser une imprimante commune</li>
+                    <li>Accéder à Internet</li>
+                    <li>Communiquer entre ordinateurs</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <h2>2. Importance des Réseaux</h2>
+        <div class="box">
+            <button onclick="masquerMontrer()">Masquer/Afficher cette section</button>
+            <div id="section2">
+                <p>Les réseaux sont importants pour :</p>
+                <ul>
+                    <li>Le travail en équipe</li>
+                    <li>L'accès à l'information</li>
+                    <li>La communication</li>
+                    <li>Le partage de ressources</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>3. Exemples de Réseaux</h2>
+        <div class="box">
+            <button onclick="afficherExemples()">Afficher les exemples</button>
+            <div id="exemples" class="cache">
+                <table>
+                    <tr>
+                        <th>Lieu</th>
+                        <th>Type de réseau</th>
+                        <th>Exemple</th>
+                    </tr>
+                    <tr>
+                        <td>Maison</td>
+                        <td>LAN</td>
+                        <td>Routeur Wi-Fi</td>
+                    </tr>
+                    <tr>
+                        <td>École</td>
+                        <td>LAN</td>
+                        <td>Salle informatique</td>
+                    </tr>
+                    <tr>
+                        <td>Monde</td>
+                        <td>WAN</td>
+                        <td>Internet</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        Created by Habib    
+    </footer>
+
+    <script>
+        function montrerDetails() {
+            let details = document.getElementById("details");
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+        
+
+        
+        function masquerMontrer() {
+            let section = document.getElementById("section2");
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+        
+        function afficherExemples() {
+            let exemples = document.getElementById("exemples");
+            exemples.style.display = "block";
+        }
+        
+        
+    </script>
+
+</body>
+</html>

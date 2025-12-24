@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Sécurité des Réseaux</title>
+<style>
+/* ===== GLOBAL ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f9fbfd; /* blanc/gris clair */
+    color: #1c3b8a; /* bleu doux */
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 40px;
+    color: #1c3b8a;
+}
+
+.section {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* TITRE DE SECTION */
+.title {
+    background: #4c7edb; /* bleu doux */
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.title:hover {
+    background: #3b6ac4; /* bleu plus foncé au survol */
+}
+
+/* CONTENU */
+.content {
+    background: #f5f5f5; /* gris clair */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HIGHLIGHT */
+.highlight {
+    background: #dbe6ff; /* bleu très clair */
+    padding: 10px;
+    border-left: 5px solid #4c7edb; /* accent bleu */
+    margin: 15px 0;
+}
+
+/* TABLEAU */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #4c7edb;
+    color: white;
+}
+
+/* FOOTER SMOOTH */
+footer {
+    background: linear-gradient(135deg, #4c7edb, #3b6ac4); /* smooth gradient blue */
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* subtle shadow */
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+footer:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+    .section {
+        padding: 10px;
+    }
+    table, th, td {
+        font-size: 13px;
+    }
+    footer {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+<body>
+
+<h1>Sécurité des Réseaux</h1>
+
+<div class="section">
+    <div class="title">Introduction</div>
+    <div class="content">
+        La sécurité des réseaux protège les données et les ordinateurs contre les attaques et les intrusions.
+    </div>
+
+    <div class="title">Les Menaces</div>
+    <div class="content">
+        <ul>
+            <li>Virus et logiciels dangereux</li>
+            <li>Attaques qui bloquent le réseau</li>
+            <li>Emails trompeurs pour voler vos informations</li>
+            <li>Intrusions dans le réseau</li>
+        </ul>
+    </div>
+
+    <div class="title">Comment se protéger</div>
+    <div class="content">
+        <div class="highlight">Pare-feu :</div>
+        Bloque les accès non autorisés.<br><br>
+        <div class="highlight">Antivirus :</div>
+        Élimine les virus et logiciels dangereux.<br><br>
+        <div class="highlight">Chiffrement :</div>
+        Rend les données illisibles pour les intrus.<br><br>
+        <div class="highlight">Contrôle des accès :</div>
+        Vérifie qui peut utiliser le réseau et quoi faire.
+    </div>
+
+    <div class="title">Exemple de règles</div>
+    <div class="content">
+        <table>
+            <tr>
+                <th>Règle</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Mot de passe fort</td>
+                <td>Créer un mot de passe difficile et le changer souvent</td>
+            </tr>
+            <tr>
+                <td>VPN</td>
+                <td>Connexion sécurisée pour les utilisateurs à distance</td>
+            </tr>
+            <tr>
+                <td>Surveillance du réseau</td>
+                <td>Vérifier régulièrement le réseau pour détecter les problèmes</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<footer>
+    Created by Chyma
+</footer>
+
+</body>
+</html>
+

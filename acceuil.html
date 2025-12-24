@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Réseaux Informatiques</title>
+
+<style>
+/* ===== GLOBAL ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Inter, Arial, sans-serif;
+}
+
+:root{
+    --bg:#f3f7fc;
+    --card:#ffffff;
+    --primary:#4f7cff;
+    --primary-dark:#2b4fb8;
+    --text:#2e3440;
+    --shadow:rgba(0,0,0,0.07);
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(180deg,#ffffff 0%,var(--bg) 75%);
+    color:var(--text);
+    display:flex;
+    flex-direction:column;
+    line-height:1.65;
+}
+
+/* ===== HEADER ===== */
+header{
+    max-width:1100px;
+    margin:40px auto 18px;
+    padding:30px 36px;
+    border-radius:32px;
+    background:var(--card);
+    box-shadow:0 26px 46px var(--shadow);
+    text-align:center;
+}
+
+/* BEAUTIFUL TITLE */
+header h1{
+    font-size:46px;
+    font-weight:700;
+    letter-spacing:1px;
+    background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+header h2{
+    margin-top:8px;
+    font-size:18px;
+    color:#6b7280;
+    font-weight:400;
+}
+
+/* ===== LAYOUT ===== */
+.container{
+    max-width:1100px;
+    margin:0 auto 40px;
+    display:grid;
+    grid-template-columns:260px 1fr;
+    gap:30px;
+}
+
+/* ===== ASIDE ===== */
+aside{
+    background:var(--card);
+    border-radius:28px;
+    padding:26px 22px;
+    box-shadow:0 20px 36px var(--shadow);
+}
+
+aside h3{
+    margin-bottom:18px;
+    font-size:18px;
+    color:var(--primary-dark);
+}
+
+aside ul{list-style:none;}
+
+aside li{margin:12px 0;}
+
+aside a{
+    display:block;
+    padding:11px 16px;
+    border-radius:16px;
+    text-decoration:none;
+    color:var(--text);
+    font-size:14px;
+    transition:all 0.3s ease;
+}
+
+aside a:hover{
+    background:#eef2ff;
+    color:var(--primary-dark);
+    padding-left:20px;
+}
+
+/* ===== MAIN ===== */
+main{
+    background:var(--card);
+    border-radius:32px;
+    padding:30px;
+    box-shadow:0 24px 44px var(--shadow);
+}
+
+/* ===== CARDS ===== */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:26px;
+}
+
+.card{
+    background:linear-gradient(180deg,#ffffff,#f9fbff);
+    border-radius:28px;
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    box-shadow:0 18px 34px var(--shadow);
+    transition:transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 28px 54px rgba(0,0,0,0.12);
+}
+
+.card h3{
+    font-size:18px;
+    color:var(--primary-dark);
+    margin-bottom:12px;
+    font-weight:600;
+}
+
+.card p{
+    font-size:14px;
+    color:#5a6270;
+    margin-bottom:20px;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+    align-self:flex-start;
+    padding:10px 22px;
+    border-radius:999px;
+    text-decoration:none;
+    font-size:14px;
+    color:#fff;
+    background:linear-gradient(135deg,var(--primary),#7fa0ff);
+    box-shadow:0 10px 22px rgba(79,124,255,0.35);
+    transition:all 0.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 14px 30px rgba(79,124,255,0.45);
+}
+
+/* ===== FOOTER ===== */
+footer{
+    margin-top:auto;
+    text-align:center;
+    padding:22px 0;
+    font-size:13px;
+    color:#7a8190;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:900px){
+    .container{
+        grid-template-columns:1fr;
+    }
+    .cards{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Réseaux Informatiques</h1>
+    <h2>Mini Projet – Réseaux & Communication</h2>
+</header>
+
+<div class="container">
+
+<aside>
+    <h3>Menu</h3>
+    <ul>
+        
+        <li><a href="introduction.html">Introduction & Définition</a></li>
+        <li><a href="types.html">Types de réseaux</a></li>
+        <li><a href="architecture.html">Architecture & Configuration</a></li>
+        <li><a href="securite.html">Sécurité réseau</a></li>
+    </ul>
+</aside>
+
+<main>
+<section class="cards">
+
+<article class="card">
+    <h3>Introduction & Définition</h3>
+    <p>Présentation générale des réseaux informatiques et de leurs composants essentiels.</p>
+    <a href="introduction.html" class="btn">Voir le sujet</a>
+</article>
+
+<article class="card">
+    <h3>Types de réseaux</h3>
+    <p>LAN, MAN et WAN : définitions, différences et utilisations principales.</p>
+    <a href="types.html" class="btn">Voir le sujet</a>
+</article>
+
+<article class="card">
+    <h3>Architecture & Configuration</h3>
+    <p>Client/serveur, poste à poste et configuration des adresses IP.</p>
+    <a href="architecture.html" class="btn">Voir le sujet</a>
+</article>
+
+<article class="card">
+    <h3>Sécurité réseau</h3>
+    <p>Protection des réseaux informatiques et bonnes pratiques.</p>
+    <a href="securite.html" class="btn">Voir le sujet</a>
+</article>
+
+</section>
+</main>
+
+</div>
+
+<footer>
+    Mini projet Réseaux informatiques – Created by Chyma, Moetaz, Amin, Habib
+</footer>
+
+</body>
+</html>

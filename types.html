@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<title>Types de Réseaux</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #cce0ff, #e6f0ff); /* soft blue gradient */
+    padding: 30px;
+    color: #1c3b8a; /* smooth dark blue for text */
+}
+
+h1 {
+    text-align: center;
+    color: #1c3b8a; /* smooth dark blue */
+    margin-bottom: 40px;
+}
+
+.section {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Title styling */
+.title {
+    background: #4c7edb; /* smooth medium blue */
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: background 0.3s;
+}
+
+.title:hover {
+    background: #3b6ac4; /* slightly darker smooth blue on hover */
+}
+
+/* Content box */
+.content {
+    display: none;
+    background: #f5f5f5; /* light grey */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Highlight sections */
+.highlight {
+    background: #dbe6ff; /* light smooth blue */
+    padding: 10px;
+    border-left: 5px solid #4c7edb; /* smooth blue accent */
+    margin: 15px 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ccc; /* light grey */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #4c7edb; /* smooth medium blue */
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #4c7edb; /* smooth medium blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width:900px){
+    .section {
+        padding: 10px;
+    }
+    table, th, td {
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Types de Réseaux</h1>
+
+<div class="section">
+
+    <div class="title" onclick="toggle('lan')">LAN – Local Area Network</div>
+    <div id="lan" class="content">
+
+        <p><strong>Qu’est-ce que c’est ?</strong><br>
+            Un réseau LAN connecte plusieurs appareils dans une zone limitée comme une maison ou une école.
+        </p>
+
+        <div class="highlight">
+            💡 <strong>Idée clé :</strong> plus la distance est courte, plus la vitesse est élevée.
+        </div>
+
+        <p><strong>Exemple :</strong><br>
+            Tous les ordinateurs d’une salle informatique sont connectés au même LAN.
+        </p>
+
+        <table>
+            <tr>
+                <th>Élément</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Portée</td>
+                <td>Très limitée</td>
+            </tr>
+            <tr>
+                <td>Vitesse</td>
+                <td>Très élevée</td>
+            </tr>
+            <tr>
+                <td>Coût</td>
+                <td>Faible</td>
+            </tr>
+            <tr>
+                <td>Sécurité</td>
+                <td>Élevée</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="title" onclick="toggle('man')">MAN – Metropolitan Area Network</div>
+    <div id="man" class="content">
+
+        <p><strong>Qu’est-ce que c’est ?</strong><br>
+            Un réseau MAN relie plusieurs LAN dans une ville ou une grande zone urbaine.
+        </p>
+
+        <div class="highlight">
+            🏙️ <strong>Comparaison :</strong> comme un réseau de routes connectant plusieurs quartiers.
+        </div>
+
+        <p><strong>Exemple :</strong><br>
+            Une université avec plusieurs campus utilise un MAN pour relier ses bâtiments.
+        </p>
+
+        <table>
+            <tr>
+                <th>Élément</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Portée</td>
+                <td>Ville</td>
+            </tr>
+            <tr>
+                <td>Vitesse</td>
+                <td>Moyenne à élevée</td>
+            </tr>
+            <tr>
+                <td>Coût</td>
+                <td>Moyen</td>
+            </tr>
+            <tr>
+                <td>Gestion</td>
+                <td>Institution unique</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="title" onclick="toggle('wan')">WAN – Wide Area Network</div>
+    <div id="wan" class="content">
+
+        <p><strong>Qu’est-ce que c’est ?</strong><br>
+            Un WAN couvre de grandes distances et relie plusieurs LAN et MAN.
+        </p>
+
+        <div class="highlight">
+            🌍 <strong>À retenir :</strong> Internet est le plus grand WAN au monde.
+        </div>
+
+        <p><strong>Exemple :</strong><br>
+            Une entreprise internationale relie ses filiales dans différents pays grâce à un WAN.
+        </p>
+
+        <table>
+            <tr>
+                <th>Élément</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Portée</td>
+                <td>Mondiale</td>
+            </tr>
+            <tr>
+                <td>Vitesse</td>
+                <td>Inférieure au LAN</td>
+            </tr>
+            <tr>
+                <td>Coût</td>
+                <td>Élevé</td>
+            </tr>
+            <tr>
+                <td>Risques</td>
+                <td>Sécurité plus complexe</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+<footer>
+    Created by Amin
+</footer>
+
+<script>
+function toggle(id) {
+    let content = document.getElementById(id);
+    content.style.display = content.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
